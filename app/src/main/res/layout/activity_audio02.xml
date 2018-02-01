@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a7ec5d"
+    tools:context="com.iesvirgendelcarmen.dam.audio02.Audio02">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SONIDOS CON MEDIAPLAYER"
+        android:gravity="center"
+        android:textColor="#060606"
+        android:id="@+id/textView" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/cancion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CANCION" />
+
+    <ImageView
+        android:id="@+id/vitru"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:src="@drawable/vitru" />
+
+    <TextView
+        android:id="@+id/duracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="DURACION" />
+
+    <SeekBar
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/retroceder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_rew"
+            />
+
+        <ImageButton
+            android:id="@+id/pausar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_pause"
+            />
+
+        <ImageButton
+            android:id="@+id/reproducir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            />
+
+        <ImageButton
+            android:id="@+id/avanzar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_next"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
